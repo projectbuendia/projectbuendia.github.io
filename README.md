@@ -1,2 +1,3 @@
 # projectbuendia.github.io
-http://projectbuendia.org/ website
+
+All content for http://projectbuendia.org/ is maintained here.
