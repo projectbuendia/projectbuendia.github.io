@@ -1,16 +1,24 @@
-/* Helvetica's x-height is 0.53 * font-size; line-height = 0.53 * (1 + phi) */
-/* achieves (line-height - x-height) / x-height = phi. */
+/* A block of type is made of horizontal stripes: alternately, a stripe as  */
+/* thick as the x-height that contains most of the ink, then a mostly empty */
+/* stripe, then an inky stripe, then a mostly empty stripe, etc.  To create */
+/* a golden ratio between the thicknesses of the stripes, let's make        */
+/* (line-height - x-height) / x-height = phi.  To achieve this we set       */
+/* line-height = (1 + phi) * x-height.  In Helvetica, the x-height is       */
+/* 0.53 * font-size, giving line-height = 1.39 * font-size.                 */
 * { font-family: helvetica, arial; font-size: 24px; line-height: 1.39; }
 
-/* Helvetica's baseline is 0.43 * font-size above its bottom edge; lowering */
-/* baseline to bottom edge allows control of baseline-to-baseline distance. */
+/* Helvetica's baseline is 0.43 * font-size above the bottom edge of the    */
+/* text box.  Lowering the baseline to the bottom edge of the textbox       */
+/* enables us to control baseline-to-baseline distances.                    */
 h1, h2, p { position: relative; top: 0.43em; }
 
-/* Set left-margin to line-height * phi. */
-body { background: #e8eeee; color: #135; margin: 1.39em 2.25em; max-width: 30em; }
+/* Setting the left margin to phi * line-height = 2.25 * font-size causes   */
+/* the left endpoints of the baselines to form golden rectangles with the   */
+/* left edge of the window.                                                 */
+body { background: #e8eeee; color: #135; margin: 1.39em 2.25em; }
 
 h1 { font-weight: 300; font-size: 48px; margin: 0; }
-h2 { font-weight: 200; margin: 2em 0 0; text-transform: uppercase; }
-p { margin: 1.39em 0; }
+h2 { font-weight: 200; margin: 2.78em 0 0; text-transform: uppercase; }
+p { margin: 1.39em 0; max-width: 30em; }
 a { text-decoration: none; color: inherit; opacity: 0.7; }
 a:hover { color: #000000; opacity: 1; }
