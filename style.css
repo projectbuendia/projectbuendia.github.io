@@ -20,5 +20,5 @@ body { background: #e8eeee; color: #147; margin: 1.39em 2.25em; }
 h1 { font-weight: 300; font-size: 48px; margin: 0; }
 h2 { font-weight: 200; margin: 2.78em 0 0; text-transform: uppercase; }
 p { margin: 1.39em 0; max-width: 30em; }
-a { text-decoration: none; color: #16b; }
-a:hover { color: #000000; opacity: 1; }
+a { text-decoration: none; color: #37b; }
+a:hover { text-decoration: underline; }
