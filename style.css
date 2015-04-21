@@ -22,3 +22,7 @@ h2 { font-weight: 200; margin: 2.78em 0 0; text-transform: uppercase; }
 p { margin: 1.39em 0; max-width: 30em; }
 a { text-decoration: none; color: #37b; }
 a:hover { text-decoration: underline; }
+
+.figure { padding-bottom: 1em; }
+.figure:first-child { padding-right: 2em; text-align: center; }
+.caption { font-size: 16px; padding-top: 0.5em; text-align: center; }
