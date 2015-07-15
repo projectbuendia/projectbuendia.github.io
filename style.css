@@ -5,7 +5,7 @@
 /* (line-height - x-height) / x-height = phi.  To achieve this we set       */
 /* line-height = (1 + phi) * x-height.  In Helvetica, the x-height is       */
 /* 0.53 * font-size, giving line-height = 1.39 * font-size.                 */
-body, td { font-family: helvetica, arial; font-size: 24px; line-height: 1.39; }
+body, td { font-family: helvetica, arial; font-size: 18px; line-height: 1.39; }
 
 /* Helvetica's baseline is 0.43 * font-size above the bottom edge of the    */
 /* text box.  Lowering the baseline to the bottom edge of the textbox       */
@@ -15,14 +15,97 @@ h1, h2, p { position: relative; top: 0.43em; }
 /* Setting the left margin to phi * line-height = 2.25 * font-size causes   */
 /* the left endpoints of the baselines to form golden rectangles with the   */
 /* left edge of the window.                                                 */
-body { background: #e8eeee; color: #147; margin: 1.39em 2.25em; }
+body { background: #e8eeee; color: #147; margin: 0 }
 
-h1 { font-weight: 300; font-size: 48px; margin: 0; }
-h2 { font-weight: 200; margin: 2.78em 0 0; text-transform: uppercase; }
-p { margin: 1.39em 0; max-width: 30em; }
+h1 { font-weight: 300; font-size: 48px; margin: 2.78em 0 0; }
+h2 { font-weight: 200; font-size: 28px; margin: 1.5em 0 0; }
+h3 { font-weight: 700; font-size: 20px; margin: 2.78em 0 0; }
+
+p,ul { margin: 1.39em 0; max-width: 30em; margin-left: auto; margin-right: auto; }
+
+table { margin-left: auto; margin-right: auto; }
+
 a { text-decoration: none; color: #37b; }
 a:hover { text-decoration: underline; }
 
 .figure { padding-bottom: 1em; }
 .figure:first-child { padding-right: 2em; text-align: center; }
 .caption { font-size: 18px; padding-top: 0.5em; text-align: center; }
+
+a.btn {
+	display:inline-block;
+	position:relative;
+	padding: 1em;
+	margin: 1em;
+	box-shadow: 1px 1px 1px #999;
+	border-radius: 2px;
+	background: #37b;
+	color: #fff;
+}
+
+a.btn:hover {
+	background: #59e;
+	left:-1px;
+	top:-1px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+section {
+	width: 100%;
+	position: relative;
+}
+
+section > div {
+	padding: 1em 2.25em;
+}
+
+div.intro {
+	font-size: 1.2em;
+}
+
+div.left {
+	float:left;
+	width:40%;
+	min-width:400px;
+	margin-left:0.3em;
+	margin-right:0.1em;
+}
+
+div.right {
+	float:left;
+	width:40%;
+	min-width:400px;
+	margin-left:0.3em;
+	margin-right:0.1em;
+}
+
+section.alt {
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+section.bg-img {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	min-height: 480px;
+	color: #fff;
+	text-align: center;
+}
+
+section.overlay:before {
+	background-color: #147;
+	opacity: 0.4;
+	content: ' ';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.clearfix {
+	clear: both;
+}
