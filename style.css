@@ -21,7 +21,7 @@ h1 { font-weight: 300; font-size: 48px; margin: 2.78em 0 0; }
 h2 { font-weight: 200; font-size: 28px; margin: 1.5em 0 0; }
 h3 { font-weight: 700; font-size: 20px; margin: 2.78em 0 0; }
 
-p,ul { margin: 1.39em 0; max-width: 30em; margin-left: auto; margin-right: auto; }
+p,ul,li { margin: 1.39em 0; max-width: 30em; margin-left: auto; margin-right: auto; }
 
 table { margin-left: auto; margin-right: auto; }
 
