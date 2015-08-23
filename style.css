@@ -10,7 +10,7 @@ body, td { font-family: helvetica, arial; font-size: 18px; line-height: 1.39; }
 /* Helvetica's baseline is 0.43 * font-size above the bottom edge of the    */
 /* text box.  Lowering the baseline to the bottom edge of the textbox       */
 /* enables us to control baseline-to-baseline distances.                    */
-h1, h2, p { position: relative; top: 0.43em; }
+h1, h2 { position: relative; top: 0.43em; }
 
 /* Setting the left margin to phi * line-height = 2.25 * font-size causes   */
 /* the left endpoints of the baselines to form golden rectangles with the   */
@@ -18,7 +18,7 @@ h1, h2, p { position: relative; top: 0.43em; }
 body { background: #e8eeee; color: #147; margin: 0 }
 
 h1 { font-weight: 300; font-size: 48px; margin: 2.78em 0 0; }
-h2 { font-weight: 200; font-size: 28px; margin: 1.5em 0 0; }
+h2 { font-weight: 200; font-size: 28px; margin: 1.5em 0; }
 h3 { font-weight: 700; font-size: 20px; margin: 2.78em 0 0; }
 
 p,ul,li { margin: 1.39em 0; max-width: 30em; margin-left: auto; margin-right: auto; }
@@ -56,7 +56,7 @@ section {
 }
 
 section > div {
-	padding: 1em 2.25em;
+	padding: 0.5em 2.25em;
 }
 
 div.intro {
